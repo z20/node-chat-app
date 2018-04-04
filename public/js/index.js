@@ -6,12 +6,8 @@ socket.on('connect', function () {
 
   socket.emit('createMessage', {
       from: 'Zach',
-      text: 'Hellow, there!'
+      text: 'Hello, there!'
   });
-});
-
-socket.on('newMessage', function(message) {
-    console.log('newMessage', message);
 });
 
 
